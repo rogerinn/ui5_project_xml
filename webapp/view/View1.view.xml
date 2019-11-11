@@ -1,0 +1,97 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns:core="sap.ui.core" xmlns:form="sap.ui.layout.form" xmlns:layout="sap.ui.layout" xmlns:microchart="sap.suite.ui.microchart" xmlns="sap.m" controllerName="socium.Socium.controller.View1" displayBlock="true">
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="{i18n>Cadastro de vendas}">
+					<content>
+						<form:SimpleForm editable="true" layout="ResponsiveGridLayout">
+							<form:content>
+								<Label text="Empresa" width="100%"/>
+								<Select xmlns="sap.m">
+									<items>
+										<core:Item key="item-key-1" text="Item Text One"/>
+										<core:Item key="item-key-2" text="Item Text Two"/>
+									</items>
+								</Select>
+								<Label text="Produto" width="100%"/>
+								<Select>
+									<items>
+										<core:Item key="item-key-1" text="Item Text One"/>
+										<core:Item key="item-key-2" text="Item Text Two"/>
+									</items>
+								</Select>
+								<Label text="Quantidade"/>
+								<Input width="100%" placeholder="Número de produtos vendidos"/>
+								<Label text="Preço Unitário "/>
+								<Input placeholder="Por produto vendido "/>
+								<Label text="Data da Venda" width="100%"/>
+								<DatePicker/>
+								<Label text="Data da Venda" width="100%"/></form:content>
+							<form:title>
+								<core:Title text="Suas vendas"/>
+							</form:title>
+						</form:SimpleForm>
+						<Button xmlns="sap.m" text="Button" id="button3"/>
+						<Table noDataText="Drop column list items here and columns in the area above">
+							<items>
+								<ColumnListItem type="Active">
+									<cells>
+										<Text text="BRF S.A."/>
+										<Text text="Meio das Asas"/>
+										<Text text="2 qtde"/>
+										<Text text="R$ 150,32"/>
+										<Text text="08/11/2019"/>
+										<Text text="R$ 300,64"/></cells>
+								</ColumnListItem>
+								<StandardListItem type="Detail" title="Vendas" activeIcon="sap-icon://money-bills"/>
+							</items>
+							<columns>
+								<Column>
+									<header>
+										<Label text="Empresa"/>
+									</header>
+								</Column>
+								<Column>
+									<header>
+										<Label text="Produtos"/>
+									</header>
+								</Column>
+								<Column>
+									<header>
+										<Label text="Quantidade"/>
+									</header>
+								</Column>
+								<Column>
+									<header>
+										<Label text="Preço Unitário"/>
+									</header>
+								</Column>
+								<Column>
+									<header>
+										<Label text="Data da Venda"/>
+									</header>
+								</Column>
+								<Column>
+									<header>
+										<Label text="Preço Total"/>
+									</header>
+								</Column>
+							</columns>
+						</Table>
+					</content>
+					<footer>
+						<Bar class="sapContrast sapContrastPlus">
+							<contentLeft>
+								<Button text="Deletar venda" type="Reject"/>
+								<core:ComponentContainer width="100%"/>
+							</contentLeft>
+							<contentRight>
+								<Button xmlns="sap.m" text="Salvar venda" type="Accept"/>
+							</contentRight>
+						</Bar>
+					</footer>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>
