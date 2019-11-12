@@ -31,7 +31,6 @@
 								<core:Title text="Suas vendas"/>
 							</form:title>
 						</form:SimpleForm>
-						<Button xmlns="sap.m" text="Button" id="button3"/>
 						<Table noDataText="Drop column list items here and columns in the area above">
 							<items>
 								<ColumnListItem type="Active">
